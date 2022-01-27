@@ -98,6 +98,8 @@ namespace API.Controllers
         
 
         [HttpPost("jwt_login")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<UserDto>> LoginWithJWT(LoginDto loginDto)
         {
             var user = await _userManager.FindByEmailAsync(loginDto.Email);

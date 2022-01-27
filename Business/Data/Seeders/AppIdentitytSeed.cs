@@ -18,6 +18,7 @@ namespace Business.Data.Seeders
                     {
                         FirstName = "Gabriel",
                         LastName = "Drozd",
+                        Street = "Krakowska 21",
                         City = "Rzeszow",
                         Voivodeship = "Subcarpathia",
                         ZipCode = "35-000"
